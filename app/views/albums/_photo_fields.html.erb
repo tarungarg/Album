@@ -1,0 +1,7 @@
+<p class="image_attr">
+  <%= f.label :content, "Upload Photo" %><br />
+  <%= f.file_field :image %><br />
+</p>
+<%= f.fields_for :tags do |builder| %>
+  <%= render 'tag_fields', :f => builder %>
+<% end %>

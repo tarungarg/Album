@@ -1,0 +1,19 @@
+<%= form_for @album, :html => { :multipart => true, :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend>Create Album</legend>
+    <% @album.errors.full_messages.each do |msg| %>
+        <p><%= msg %></p>
+     <% end %>
+    <p class="name">
+      <%= f.label "Album Name" %><br />
+      <%= f.text_field :name %>
+    </p>
+    <div class="image_tags" id="data-image">
+      <%= f.fields_for :photos do |builder| %>
+        <%= render "photo_fields", :f => builder %>
+      <% end %>
+    </div><br/>
+    <button id="add-more_image" value="Add More" class="btn btn-success">Add More Images</button>
+    <%= f.submit "Submit", :class => 'btn btn-primary' %>
+  </fieldset>
+<% end %>
