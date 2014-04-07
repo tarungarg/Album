@@ -24,7 +24,10 @@ Key points
 
 9. Hashtag feature without using hashtag plugin
 
-10. Habtm(has_and belongs_to_many) etc.
+10. Habtm(has_and belongs_to_many) 
+
+11. Paperclip etc.
+
 
 
 == Welcome to Rails
