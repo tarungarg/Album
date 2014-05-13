@@ -6,11 +6,11 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: demo_development
+  database: Album_development
   pool: 5
   timeout: 5000
-  username: root
-  password: root
+  username: Album
+  password:
   # socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -19,19 +19,19 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: demo_test
+  database: Album_test
   pool: 5
   timeout: 5000
-  username: root
-  password: root
+  username: Album
+  password:
   # socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: demo_production
+  database: Album_production
   pool: 5
   timeout: 5000
-  username: root
-  password: root
+  username: Album
+  password:
   # socket: /Applications/MAMP/tmp/mysql/mysql.sock
